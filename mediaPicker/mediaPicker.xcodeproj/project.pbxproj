@@ -34,6 +34,10 @@
 		CAF723671E0871AA004308DF /* btn_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAF723651E0871AA004308DF /* btn_back@2x.png */; };
 		CAF723681E0871AA004308DF /* btn_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAF723661E0871AA004308DF /* btn_back@3x.png */; };
 		CAF7236B1E08763E004308DF /* BaseAddImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF7236A1E08763E004308DF /* BaseAddImageViewController.m */; };
+		CAF7236E1E088040004308DF /* img_edit@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAF7236C1E088040004308DF /* img_edit@2x.png */; };
+		CAF7236F1E088040004308DF /* img_edit@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAF7236D1E088040004308DF /* img_edit@3x.png */; };
+		CAF723751E08813E004308DF /* OBShapedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF723721E08813E004308DF /* OBShapedButton.m */; };
+		CAF723761E08813E004308DF /* UIImage+ColorAtPixel.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF723741E08813E004308DF /* UIImage+ColorAtPixel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +84,12 @@
 		CAF723661E0871AA004308DF /* btn_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_back@3x.png"; sourceTree = "<group>"; };
 		CAF723691E08763E004308DF /* BaseAddImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAddImageViewController.h; sourceTree = "<group>"; };
 		CAF7236A1E08763E004308DF /* BaseAddImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAddImageViewController.m; sourceTree = "<group>"; };
+		CAF7236C1E088040004308DF /* img_edit@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_edit@2x.png"; sourceTree = "<group>"; };
+		CAF7236D1E088040004308DF /* img_edit@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_edit@3x.png"; sourceTree = "<group>"; };
+		CAF723711E08813E004308DF /* OBShapedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBShapedButton.h; sourceTree = "<group>"; };
+		CAF723721E08813E004308DF /* OBShapedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBShapedButton.m; sourceTree = "<group>"; };
+		CAF723731E08813E004308DF /* UIImage+ColorAtPixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorAtPixel.h"; sourceTree = "<group>"; };
+		CAF723741E08813E004308DF /* UIImage+ColorAtPixel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorAtPixel.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +164,8 @@
 		CAF723201E083431004308DF /* mediaPicker */ = {
 			isa = PBXGroup;
 			children = (
+				CAF7236C1E088040004308DF /* img_edit@2x.png */,
+				CAF7236D1E088040004308DF /* img_edit@3x.png */,
 				CAF723691E08763E004308DF /* BaseAddImageViewController.h */,
 				CAF7236A1E08763E004308DF /* BaseAddImageViewController.m */,
 				CAF7235E1E085F17004308DF /* View Photo */,
@@ -179,6 +191,7 @@
 		CAF723291E08346D004308DF /* library */ = {
 			isa = PBXGroup;
 			children = (
+				CAF723701E088133004308DF /* OBShapedButton */,
 				CAF723421E083F5A004308DF /* Reuse this Code File for Xib Loading */,
 				CAF7232A1E083478004308DF /* JGActionSheet */,
 			);
@@ -212,6 +225,17 @@
 				CAF723601E085F25004308DF /* ViewFullPhotoViewController.m */,
 			);
 			name = "View Photo";
+			sourceTree = "<group>";
+		};
+		CAF723701E088133004308DF /* OBShapedButton */ = {
+			isa = PBXGroup;
+			children = (
+				CAF723711E08813E004308DF /* OBShapedButton.h */,
+				CAF723721E08813E004308DF /* OBShapedButton.m */,
+				CAF723731E08813E004308DF /* UIImage+ColorAtPixel.h */,
+				CAF723741E08813E004308DF /* UIImage+ColorAtPixel.m */,
+			);
+			name = OBShapedButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,8 +309,10 @@
 				CAF723561E0854A4004308DF /* img_delete@2x.png in Resources */,
 				CAF723491E08423E004308DF /* ic_image@2x.png in Resources */,
 				CAF723681E0871AA004308DF /* btn_back@3x.png in Resources */,
+				CAF7236E1E088040004308DF /* img_edit@2x.png in Resources */,
 				CAF723271E083445004308DF /* MediaPickerMenuView.xib in Resources */,
 				CAF723131E0833F3004308DF /* Main.storyboard in Resources */,
+				CAF7236F1E088040004308DF /* img_edit@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,8 +328,10 @@
 				CAF723341E08384B004308DF /* NSError+GT.m in Sources */,
 				CAF723521E084AA4004308DF /* Navigator.m in Sources */,
 				CAF723101E0833F3004308DF /* ViewController.m in Sources */,
+				CAF723761E08813E004308DF /* UIImage+ColorAtPixel.m in Sources */,
 				CAF723451E083F63004308DF /* PSCustomViewFromXib.m in Sources */,
 				CAF723641E08698F004308DF /* InteractionManager.m in Sources */,
+				CAF723751E08813E004308DF /* OBShapedButton.m in Sources */,
 				CAF723611E085F25004308DF /* ViewFullPhotoViewController.m in Sources */,
 				CAF7230D1E0833F3004308DF /* AppDelegate.m in Sources */,
 				CAF7236B1E08763E004308DF /* BaseAddImageViewController.m in Sources */,

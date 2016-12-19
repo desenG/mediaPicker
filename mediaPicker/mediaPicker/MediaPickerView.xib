@@ -30,10 +30,11 @@
                             <rect key="frame" x="0.0" y="0.0" width="381" height="381"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                         </imageView>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3D-OE-wLm">
-                            <rect key="frame" x="309" y="2" width="60" height="60"/>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3D-OE-wLm" customClass="OBShapedButton">
+                            <rect key="frame" x="329" y="43" width="40" height="40"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="Button" backgroundImage="ic_image.png"/>
+                            <color key="backgroundColor" red="0.9692372212202508" green="1" blue="0.93285730047336923" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" image="img_edit.png"/>
                             <connections>
                                 <action selector="actionAddPhoto:" destination="-1" eventType="touchUpInside" id="EZZ-ZQ-36d"/>
                             </connections>
@@ -75,6 +76,7 @@
     </objects>
     <resources>
         <image name="ic_image.png" width="32" height="32"/>
+        <image name="img_edit.png" width="40" height="40"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

@@ -4,6 +4,7 @@
 #define mediaPicker_Prefix_pch
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import "OBShapedButton.h"
 #import "InteractionManager.h"
 #import "Navigator.h"
 #import "PSCustomViewFromXib.h"
