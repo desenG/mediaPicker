@@ -11,4 +11,5 @@
 
 @interface MediaPickerView : PSCustomViewFromXib
 -(void)setHostViewController:(UIViewController*)hostViewController;
+-(void)setImageDataInPickerView:(NSData*)imageData;
 @end

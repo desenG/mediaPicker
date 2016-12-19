@@ -15,6 +15,7 @@
 -(void)actionHide;
 
 @end
+
 @interface MediaPickerMenuView : UIView
 @property (assign) id<MediaPickerMenuViewDelegate> delegate;
 @property (strong, nonatomic) IBOutlet UILabel *lblTitle;

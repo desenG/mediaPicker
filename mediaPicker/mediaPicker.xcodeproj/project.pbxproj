@@ -33,6 +33,7 @@
 		CAF723641E08698F004308DF /* InteractionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF723631E08698F004308DF /* InteractionManager.m */; };
 		CAF723671E0871AA004308DF /* btn_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAF723651E0871AA004308DF /* btn_back@2x.png */; };
 		CAF723681E0871AA004308DF /* btn_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAF723661E0871AA004308DF /* btn_back@3x.png */; };
+		CAF7236B1E08763E004308DF /* BaseAddImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF7236A1E08763E004308DF /* BaseAddImageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,8 @@
 		CAF723631E08698F004308DF /* InteractionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractionManager.m; sourceTree = "<group>"; };
 		CAF723651E0871AA004308DF /* btn_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_back@2x.png"; sourceTree = "<group>"; };
 		CAF723661E0871AA004308DF /* btn_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_back@3x.png"; sourceTree = "<group>"; };
+		CAF723691E08763E004308DF /* BaseAddImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAddImageViewController.h; sourceTree = "<group>"; };
+		CAF7236A1E08763E004308DF /* BaseAddImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAddImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +154,8 @@
 		CAF723201E083431004308DF /* mediaPicker */ = {
 			isa = PBXGroup;
 			children = (
+				CAF723691E08763E004308DF /* BaseAddImageViewController.h */,
+				CAF7236A1E08763E004308DF /* BaseAddImageViewController.m */,
 				CAF7235E1E085F17004308DF /* View Photo */,
 				CAF7235A1E085EB2004308DF /* ic_more_white@2x.png */,
 				CAF7235B1E085EB2004308DF /* ic_more_white@3x.png */,
@@ -301,6 +306,7 @@
 				CAF723641E08698F004308DF /* InteractionManager.m in Sources */,
 				CAF723611E085F25004308DF /* ViewFullPhotoViewController.m in Sources */,
 				CAF7230D1E0833F3004308DF /* AppDelegate.m in Sources */,
+				CAF7236B1E08763E004308DF /* BaseAddImageViewController.m in Sources */,
 				CAF723261E083445004308DF /* MediaPickerMenuView.m in Sources */,
 				CAF7230A1E0833F3004308DF /* main.m in Sources */,
 				CAF723281E083445004308DF /* MediaPicker.m in Sources */,

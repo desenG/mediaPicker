@@ -11,5 +11,6 @@
 @interface ViewFullPhotoViewController : UIViewController {
     IBOutlet UIImageView *imgViewPhoto;
 }
-@property (weak, nonatomic) NSData* imageData;
+@property (strong, nonatomic) NSData* imageData;
+@property (assign) id<MediaPickerViewControllerDelegate> delegate;
 @end

@@ -40,7 +40,9 @@
 }
 
 - (IBAction)actionBack:(id)sender {
+    [self.delegate setImageData:imageData.copy];
     [self.navigationController popViewControllerAnimated:YES];
+    imageData = nil;
 }
 
 - (IBAction)actionShowMenu:(id)sender {
@@ -50,7 +52,7 @@
             return;
         }
         
-        imageData = (NSData*)obj;
+        imageData = ((NSData*)obj).copy;
         UIImage *image = [UIImage imageWithData:imageData];
         if(!image)
         {

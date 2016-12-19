@@ -20,14 +20,14 @@
 
 @implementation MediaPickerView
 {
-    UIViewController* pHostViewController;
+    UIViewController<MediaPickerViewControllerDelegate>* mHostViewController;
     NSData* imageData;
 }
 @synthesize viewAddPhoto,viewPreview,imgViewPrevew;
 
--(void)setHostViewController:(UIViewController*)hostViewController
+-(void)setHostViewController:(UIViewController<MediaPickerViewControllerDelegate>*)hostViewController
 {
-    pHostViewController = hostViewController;
+    mHostViewController = hostViewController;
 }
 // Note: You can customize the behavior after calling the super method
 
@@ -50,25 +50,29 @@
 }
 
 - (IBAction)actionAddPhoto:(id)sender {
-    [[MediaPicker sharedInstance] showMenuFromViewController:pHostViewController withMenuTitle:@"Section Photo"andGetDataCompleteHandler:^(id obj, NSError *err) {
+    [[MediaPicker sharedInstance] showMenuFromViewController:mHostViewController withMenuTitle:@"Section Photo"andGetDataCompleteHandler:^(id obj, NSError *err) {
         if(err || !obj)
         {
             return;
         }
         
-        viewAddPhoto.hidden = true;
-        viewPreview.hidden = false;
-        
         imageData = (NSData*)obj;
-        UIImage *image = [UIImage imageWithData:imageData];
-        if(!image)
-        {
-            return;
-        }
-        
-        [imgViewPrevew setImage:image];
+        [self showImage];
     }];
 }
+
+-(void)showImage
+{
+    viewAddPhoto.hidden = (imageData !=nil);
+    viewPreview.hidden = (imageData ==nil);
+
+    if(!imageData) return;
+    
+    UIImage *image = [UIImage imageWithData:imageData];
+
+    [imgViewPrevew setImage:image];
+}
+
 -(void)setup{
     [InteractionManager addTappingDoneToView:imgViewPrevew withNumberOfTapsRequired:1 andAction:@selector(handleTapGesture:) onTarget:self];
 
@@ -80,9 +84,15 @@
         
         ViewFullPhotoViewController* viewFullPhotoViewController = [storyboard instantiateViewControllerWithIdentifier:@"ViewFullPhotoViewController"];
         viewFullPhotoViewController.imageData = imageData;
-        [Navigator pushViewControllerFromCurrentViewController:pHostViewController withAnotherViewController:viewFullPhotoViewController andAnimated:YES];
+        viewFullPhotoViewController.delegate = mHostViewController;
+        [Navigator pushViewControllerFromCurrentViewController:mHostViewController withAnotherViewController:viewFullPhotoViewController andAnimated:YES];
     }
 }
 
+-(void)setImageDataInPickerView:(NSData*)pImageData
+{
+    imageData = pImageData;
+    [self showImage];
+}
 
 @end

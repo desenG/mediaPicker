@@ -13,6 +13,13 @@
 
 
 #endif /* MediaPicker_h */
+
+@protocol MediaPickerViewControllerDelegate <NSObject>
+
+-(void)setImageData:(NSData*)imageData;
+
+@end
+
 @interface MediaPicker : NSObject <UIImagePickerControllerDelegate,UINavigationControllerDelegate,MPMediaPickerControllerDelegate,MediaPickerMenuViewDelegate>
 {
     
