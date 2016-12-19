@@ -44,7 +44,21 @@
 }
 
 - (IBAction)actionShowMenu:(id)sender {
-    
+    [[MediaPicker sharedInstance] showMenuFromViewController:self withMenuTitle:@"Section Photo"andGetDataCompleteHandler:^(id obj, NSError *err) {
+        if(err || !obj)
+        {
+            return;
+        }
+        
+        imageData = (NSData*)obj;
+        UIImage *image = [UIImage imageWithData:imageData];
+        if(!image)
+        {
+            return;
+        }
+        
+        [imgViewPhoto setImage:image];
+    }];
 }
 
 @end
