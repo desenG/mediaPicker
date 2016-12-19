@@ -20,6 +20,9 @@
 +(void)pushViewControllerFromCurrentViewController:(UIViewController*)currentViewController
                           withAnotherViewController:(UIViewController*)anotherVC
                                        andAnimated:(BOOL)Animated;
++(void)pushViewControllerFromViewController:(UIViewController*)viewController
+                                 withIDName:(NSString*)VCIDname
+                                andAnimated:(BOOL)Animated;
 #pragma mark back
 +(void) returnFromViewController:(UIViewController*)viewController;
 @end

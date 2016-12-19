@@ -45,6 +45,15 @@
 {
     [currentViewController.navigationController pushViewController:anotherVC animated:Animated];
 }
+
++(void)pushViewControllerFromViewController:(UIViewController*)viewController
+                                          withIDName:(NSString*)VCIDname
+                                        andAnimated:(BOOL)Animated
+{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:STORYBOARD_NAME bundle:nil];
+    
+    [viewController.navigationController pushViewController:[storyboard instantiateViewControllerWithIdentifier:VCIDname ] animated:Animated];
+}
 #pragma mark back
 +(void) returnFromViewController:(UIViewController*)viewController
 {

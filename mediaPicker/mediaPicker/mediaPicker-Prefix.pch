@@ -4,6 +4,7 @@
 #define mediaPicker_Prefix_pch
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import "InteractionManager.h"
 #import "Navigator.h"
 #import "PSCustomViewFromXib.h"
 #import "NSError+GT.h"
@@ -11,7 +12,9 @@
 #import "JGActionSheet.h"
 #import "MediaPickerMenuView.h"
 #import "MediaPicker.h"
+#import "ViewFullPhotoViewController.h"
 #import "MediaPickerView.h"
+
 
 
 #endif

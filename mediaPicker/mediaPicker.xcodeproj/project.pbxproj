@@ -29,7 +29,10 @@
 		CAF723571E0854A4004308DF /* img_delete@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAF723551E0854A4004308DF /* img_delete@3x.png */; };
 		CAF7235C1E085EB2004308DF /* ic_more_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAF7235A1E085EB2004308DF /* ic_more_white@2x.png */; };
 		CAF7235D1E085EB2004308DF /* ic_more_white@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAF7235B1E085EB2004308DF /* ic_more_white@3x.png */; };
-		CAF723611E085F25004308DF /* ViewPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF723601E085F25004308DF /* ViewPhotoViewController.m */; };
+		CAF723611E085F25004308DF /* ViewFullPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF723601E085F25004308DF /* ViewFullPhotoViewController.m */; };
+		CAF723641E08698F004308DF /* InteractionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF723631E08698F004308DF /* InteractionManager.m */; };
+		CAF723671E0871AA004308DF /* btn_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAF723651E0871AA004308DF /* btn_back@2x.png */; };
+		CAF723681E0871AA004308DF /* btn_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAF723661E0871AA004308DF /* btn_back@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,8 +71,12 @@
 		CAF723551E0854A4004308DF /* img_delete@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_delete@3x.png"; sourceTree = "<group>"; };
 		CAF7235A1E085EB2004308DF /* ic_more_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_more_white@2x.png"; sourceTree = "<group>"; };
 		CAF7235B1E085EB2004308DF /* ic_more_white@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_more_white@3x.png"; sourceTree = "<group>"; };
-		CAF7235F1E085F25004308DF /* ViewPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewPhotoViewController.h; sourceTree = "<group>"; };
-		CAF723601E085F25004308DF /* ViewPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewPhotoViewController.m; sourceTree = "<group>"; };
+		CAF7235F1E085F25004308DF /* ViewFullPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewFullPhotoViewController.h; sourceTree = "<group>"; };
+		CAF723601E085F25004308DF /* ViewFullPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewFullPhotoViewController.m; sourceTree = "<group>"; };
+		CAF723621E08698F004308DF /* InteractionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractionManager.h; sourceTree = "<group>"; };
+		CAF723631E08698F004308DF /* InteractionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractionManager.m; sourceTree = "<group>"; };
+		CAF723651E0871AA004308DF /* btn_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_back@2x.png"; sourceTree = "<group>"; };
+		CAF723661E0871AA004308DF /* btn_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_back@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +136,8 @@
 		CAF7231F1E08341C004308DF /* foundation */ = {
 			isa = PBXGroup;
 			children = (
+				CAF723621E08698F004308DF /* InteractionManager.h */,
+				CAF723631E08698F004308DF /* InteractionManager.m */,
 				CAF723501E084AA4004308DF /* Navigator.h */,
 				CAF723511E084AA4004308DF /* Navigator.m */,
 				CAF723351E083858004308DF /* BlockTypeDefinition.h */,
@@ -192,8 +201,10 @@
 		CAF7235E1E085F17004308DF /* View Photo */ = {
 			isa = PBXGroup;
 			children = (
-				CAF7235F1E085F25004308DF /* ViewPhotoViewController.h */,
-				CAF723601E085F25004308DF /* ViewPhotoViewController.m */,
+				CAF723651E0871AA004308DF /* btn_back@2x.png */,
+				CAF723661E0871AA004308DF /* btn_back@3x.png */,
+				CAF7235F1E085F25004308DF /* ViewFullPhotoViewController.h */,
+				CAF723601E085F25004308DF /* ViewFullPhotoViewController.m */,
 			);
 			name = "View Photo";
 			sourceTree = "<group>";
@@ -262,11 +273,13 @@
 				CAF723411E083F0B004308DF /* BombDodge Logo.png in Resources */,
 				CAF723151E0833F3004308DF /* Assets.xcassets in Resources */,
 				CAF7234A1E08423E004308DF /* ic_image@3x.png in Resources */,
+				CAF723671E0871AA004308DF /* btn_back@2x.png in Resources */,
 				CAF723571E0854A4004308DF /* img_delete@3x.png in Resources */,
 				CAF7235C1E085EB2004308DF /* ic_more_white@2x.png in Resources */,
 				CAF7234F1E0845CA004308DF /* MediaPickerView.xib in Resources */,
 				CAF723561E0854A4004308DF /* img_delete@2x.png in Resources */,
 				CAF723491E08423E004308DF /* ic_image@2x.png in Resources */,
+				CAF723681E0871AA004308DF /* btn_back@3x.png in Resources */,
 				CAF723271E083445004308DF /* MediaPickerMenuView.xib in Resources */,
 				CAF723131E0833F3004308DF /* Main.storyboard in Resources */,
 			);
@@ -285,7 +298,8 @@
 				CAF723521E084AA4004308DF /* Navigator.m in Sources */,
 				CAF723101E0833F3004308DF /* ViewController.m in Sources */,
 				CAF723451E083F63004308DF /* PSCustomViewFromXib.m in Sources */,
-				CAF723611E085F25004308DF /* ViewPhotoViewController.m in Sources */,
+				CAF723641E08698F004308DF /* InteractionManager.m in Sources */,
+				CAF723611E085F25004308DF /* ViewFullPhotoViewController.m in Sources */,
 				CAF7230D1E0833F3004308DF /* AppDelegate.m in Sources */,
 				CAF723261E083445004308DF /* MediaPickerMenuView.m in Sources */,
 				CAF7230A1E0833F3004308DF /* main.m in Sources */,
@@ -448,6 +462,7 @@
 				CAF7231E1E0833F3004308DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

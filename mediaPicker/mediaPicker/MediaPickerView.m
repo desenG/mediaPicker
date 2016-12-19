@@ -35,6 +35,7 @@
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if(self) {
+        [self setup];
     }
     return self;
 }
@@ -43,7 +44,7 @@
 - (id)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if(self) {
-        
+        [self setup];
     }
     return self;
 }
@@ -68,5 +69,20 @@
         [imgViewPrevew setImage:image];
     }];
 }
+-(void)setup{
+    [InteractionManager addTappingDoneToView:imgViewPrevew withNumberOfTapsRequired:1 andAction:@selector(handleTapGesture:) onTarget:self];
+
+}
+
+- (void)handleTapGesture:(UITapGestureRecognizer *)sender {
+    if (sender.state == UIGestureRecognizerStateRecognized) {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:STORYBOARD_NAME bundle:nil];
+        
+        ViewFullPhotoViewController* viewFullPhotoViewController = [storyboard instantiateViewControllerWithIdentifier:@"ViewFullPhotoViewController"];
+        viewFullPhotoViewController.imageData = imageData;
+        [Navigator pushViewControllerFromCurrentViewController:pHostViewController withAnotherViewController:viewFullPhotoViewController andAnimated:YES];
+    }
+}
+
 
 @end

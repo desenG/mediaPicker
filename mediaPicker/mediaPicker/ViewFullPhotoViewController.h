@@ -1,5 +1,5 @@
 //
-//  ViewPhotoViewController.h
+//  ViewFullPhotoViewController.h
 //  SmartRock2™
 //
 //  Created by MINGOU WU on 2016-12-15.
@@ -8,11 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewPhotoViewController : UIViewController {
-
+@interface ViewFullPhotoViewController : UIViewController {
     IBOutlet UIImageView *imgViewPhoto;
-    
-
 }
-
+@property (weak, nonatomic) NSData* imageData;
 @end
