@@ -51,12 +51,12 @@
 
 - (IBAction)actionAddPhoto:(id)sender {
     [[MediaPicker sharedInstance] showMenuFromViewController:mHostViewController withMenuTitle:@"Section Photo"andGetDataCompleteHandler:^(id obj, NSError *err) {
-        if(err || !obj)
+        if(err)
         {
             return;
         }
         
-        imageData = (NSData*)obj;
+        imageData = (!obj)?nil:(NSData*)obj;
         [self showImage];
     }];
 }

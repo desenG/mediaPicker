@@ -271,6 +271,7 @@ andUIImagePickerControllerSourceType: (NSInteger)resourceType
 }
 -(void)actionDelete
 {
+    mCompleteHandler(nil,nil);
     [addPotoMenu removeFromSuperview];
 }
 -(void)actionHide
