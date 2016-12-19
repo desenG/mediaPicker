@@ -1,0 +1,17 @@
+
+
+#ifndef mediaPicker_Prefix_pch
+#define mediaPicker_Prefix_pch
+#import <UIKit/UIKit.h>
+#import "AppDelegate.h"
+#import "Navigator.h"
+#import "PSCustomViewFromXib.h"
+#import "NSError+GT.h"
+#import "BlockTypeDefinition.h"
+#import "JGActionSheet.h"
+#import "MediaPickerMenuView.h"
+#import "MediaPicker.h"
+#import "MediaPickerView.h"
+
+
+#endif
