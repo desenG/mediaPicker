@@ -1,5 +1,5 @@
 //
-//  UIImageView+Modify.h
+//  UIView+Modify.h
 //  mediaPicker
 //
 //  Created by giatec on 2016-12-20.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIImageView(Modify)
+@interface UIView(Modify)
 - (void)centerToUIView:(UIView *)contentView;
+- (void)centerToParentView;
+-(void)resizeWithNewHeight:(CGFloat)newHeight;
 @end

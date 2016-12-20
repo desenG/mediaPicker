@@ -68,6 +68,10 @@
 
     if(!imageData) return;
     
+    [self resizeWithNewHeight:200];
+    [viewPreview resizeWithNewHeight:200];
+    [viewPreview centerToParentView];
+    
     UIImage *image = [UIImage imageWithData:imageData];
 
     [imgViewPrevew setImage:image];
@@ -75,7 +79,6 @@
 
 -(void)setup{
     [InteractionManager addTappingDoneToView:imgViewPrevew withNumberOfTapsRequired:1 andAction:@selector(handleTapGesture:) onTarget:self];
-
 }
 
 - (void)handleTapGesture:(UITapGestureRecognizer *)sender {

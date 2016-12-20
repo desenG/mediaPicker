@@ -18,7 +18,6 @@
 		CAF723281E083445004308DF /* MediaPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF723251E083445004308DF /* MediaPicker.m */; };
 		CAF7232D1E083482004308DF /* JGActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF7232C1E083482004308DF /* JGActionSheet.m */; };
 		CAF723341E08384B004308DF /* NSError+GT.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF723331E08384B004308DF /* NSError+GT.m */; };
-		CAF723411E083F0B004308DF /* BombDodge Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CAF723401E083F0B004308DF /* BombDodge Logo.png */; };
 		CAF723451E083F63004308DF /* PSCustomViewFromXib.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF723441E083F63004308DF /* PSCustomViewFromXib.m */; };
 		CAF723491E08423E004308DF /* ic_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAF723471E08423E004308DF /* ic_image@2x.png */; };
 		CAF7234A1E08423E004308DF /* ic_image@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAF723481E08423E004308DF /* ic_image@3x.png */; };
@@ -37,6 +36,7 @@
 		CAF7236F1E088040004308DF /* img_edit@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAF7236D1E088040004308DF /* img_edit@3x.png */; };
 		CAF723751E08813E004308DF /* OBShapedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF723721E08813E004308DF /* OBShapedButton.m */; };
 		CAF723761E08813E004308DF /* UIImage+ColorAtPixel.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF723741E08813E004308DF /* UIImage+ColorAtPixel.m */; };
+		CAF723951E09796D004308DF /* UIView+Modif.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF723941E09796D004308DF /* UIView+Modif.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,7 +61,6 @@
 		CAF723321E08384B004308DF /* NSError+GT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+GT.h"; sourceTree = "<group>"; };
 		CAF723331E08384B004308DF /* NSError+GT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+GT.m"; sourceTree = "<group>"; };
 		CAF723351E083858004308DF /* BlockTypeDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockTypeDefinition.h; sourceTree = "<group>"; };
-		CAF723401E083F0B004308DF /* BombDodge Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BombDodge Logo.png"; sourceTree = "<group>"; };
 		CAF723431E083F63004308DF /* PSCustomViewFromXib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSCustomViewFromXib.h; sourceTree = "<group>"; };
 		CAF723441E083F63004308DF /* PSCustomViewFromXib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSCustomViewFromXib.m; sourceTree = "<group>"; };
 		CAF723471E08423E004308DF /* ic_image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_image@2x.png"; sourceTree = "<group>"; };
@@ -87,6 +86,8 @@
 		CAF723721E08813E004308DF /* OBShapedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBShapedButton.m; sourceTree = "<group>"; };
 		CAF723731E08813E004308DF /* UIImage+ColorAtPixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorAtPixel.h"; sourceTree = "<group>"; };
 		CAF723741E08813E004308DF /* UIImage+ColorAtPixel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorAtPixel.m"; sourceTree = "<group>"; };
+		CAF723931E09796D004308DF /* UIView+Modify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Modify.h"; sourceTree = "<group>"; };
+		CAF723941E09796D004308DF /* UIView+Modif.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Modif.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +147,8 @@
 		CAF7231F1E08341C004308DF /* foundation */ = {
 			isa = PBXGroup;
 			children = (
+				CAF723931E09796D004308DF /* UIView+Modify.h */,
+				CAF723941E09796D004308DF /* UIView+Modif.m */,
 				CAF723621E08698F004308DF /* InteractionManager.h */,
 				CAF723631E08698F004308DF /* InteractionManager.m */,
 				CAF723501E084AA4004308DF /* Navigator.h */,
@@ -173,7 +176,6 @@
 				CAF7234D1E0845CA004308DF /* MediaPickerView.xib */,
 				CAF723471E08423E004308DF /* ic_image@2x.png */,
 				CAF723481E08423E004308DF /* ic_image@3x.png */,
-				CAF723401E083F0B004308DF /* BombDodge Logo.png */,
 				CAF723211E083445004308DF /* MediaPickerMenuView.h */,
 				CAF723221E083445004308DF /* MediaPickerMenuView.m */,
 				CAF723231E083445004308DF /* MediaPickerMenuView.xib */,
@@ -294,7 +296,6 @@
 			files = (
 				CAF7235D1E085EB2004308DF /* ic_more_white@3x.png in Resources */,
 				CAF723181E0833F3004308DF /* LaunchScreen.storyboard in Resources */,
-				CAF723411E083F0B004308DF /* BombDodge Logo.png in Resources */,
 				CAF723151E0833F3004308DF /* Assets.xcassets in Resources */,
 				CAF7234A1E08423E004308DF /* ic_image@3x.png in Resources */,
 				CAF723671E0871AA004308DF /* btn_back@2x.png in Resources */,
@@ -332,6 +333,7 @@
 				CAF723261E083445004308DF /* MediaPickerMenuView.m in Sources */,
 				CAF7230A1E0833F3004308DF /* main.m in Sources */,
 				CAF723281E083445004308DF /* MediaPicker.m in Sources */,
+				CAF723951E09796D004308DF /* UIView+Modif.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

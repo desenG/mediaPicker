@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ipy-dc-VdO" customClass="MediaPickerView">
-                                <rect key="frame" x="0.0" y="183" width="375" height="127"/>
+                                <rect key="frame" x="0.0" y="183" width="375" height="51"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.91997634394973193" blue="0.35644259588711036" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
@@ -137,7 +137,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="btn_back" width="36" height="36"/>
+        <image name="btn_back" width="360" height="360"/>
         <image name="btn_back.png" width="36" height="36"/>
         <image name="ic_image.png" width="32" height="32"/>
         <image name="ic_more_white.png" width="36" height="36"/>
