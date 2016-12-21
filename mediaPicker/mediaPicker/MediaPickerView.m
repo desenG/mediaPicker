@@ -57,6 +57,9 @@
         }
         
         imageData = (!obj)?nil:(NSData*)obj;
+        
+        [mHostViewController setImageData:imageData];
+
         [self showImage];
     }];
 }
